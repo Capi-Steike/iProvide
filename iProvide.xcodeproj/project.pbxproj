@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F2660142305CC74001DA1B1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2660132305CC74001DA1B1 /* LoginViewController.swift */; };
 		3F8A34C02305C7F500F97E91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A34BF2305C7F500F97E91 /* AppDelegate.swift */; };
 		3F8A34C52305C7F500F97E91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F8A34C32305C7F500F97E91 /* Main.storyboard */; };
 		3F8A34C72305C7F500F97E91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F8A34C62305C7F500F97E91 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F2660132305CC74001DA1B1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3F8A34BC2305C7F500F97E91 /* iProvide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iProvide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F8A34BF2305C7F500F97E91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F8A34C42305C7F500F97E91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				3F8A34C62305C7F500F97E91 /* Assets.xcassets */,
 				3F8A34C82305C7F500F97E91 /* LaunchScreen.storyboard */,
 				3F8A34CB2305C7F500F97E91 /* Info.plist */,
+				3F2660132305CC74001DA1B1 /* LoginViewController.swift */,
 			);
 			path = iProvide;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				TargetAttributes = {
 					3F8A34BB2305C7F500F97E91 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 9UW62UJ95V;
 						ProvisioningStyle = Automatic;
 					};
 					3F8A34CF2305C7F500F97E91 = {
@@ -256,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F2660142305CC74001DA1B1 /* LoginViewController.swift in Sources */,
 				3F8A34C02305C7F500F97E91 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,10 +415,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9UW62UJ95V;
 				INFOPLIST_FILE = iProvide/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hackatruck.iProvide;
+				PRODUCT_BUNDLE_IDENTIFIER = assist.iAssist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -422,10 +431,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9UW62UJ95V;
 				INFOPLIST_FILE = iProvide/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hackatruck.iProvide;
+				PRODUCT_BUNDLE_IDENTIFIER = assist.iAssist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -503,6 +516,7 @@
 				3F8A34E62305C7F600F97E91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F8A34E72305C7F600F97E91 /* Build configuration list for PBXNativeTarget "iProvideTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +525,7 @@
 				3F8A34E92305C7F600F97E91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F8A34EA2305C7F600F97E91 /* Build configuration list for PBXNativeTarget "iProvideUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +534,7 @@
 				3F8A34EC2305C7F600F97E91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
